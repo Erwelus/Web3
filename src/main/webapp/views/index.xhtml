@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: user
+  Date: 30.09.2020
+  Time: 21:00
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<style type="text/css">
+</style>
+<h:head>
+    <title>check_clock</title>
+</h:head>
+
+<h:body>
+    <h:form style="border-width:2px; margin: 0 auto; padding: 1%; border-color:darkblue; border-style:solid; width: 30%">
+        <h3>Clock</h3>
+        <p:clock displayMode="analog" mode="server" autoSync="true" syncInterval="8000"/>
+        <p:clock displayMode="digital" pattern="dd.MM.yyyy" mode="server" autoSync="true" syncInterval="8000"/>
+    </h:form>
+</h:body>
+
+</html>
