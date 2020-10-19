@@ -11,19 +11,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
-<style type="text/css">
-</style>
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
     <title>check_clock</title>
 </h:head>
 
 <h:body>
-    <h:form style="border-width:2px; margin: 0 auto; padding: 1%; border-color:darkblue; border-style:solid; width: 30%">
-        <h3>Clock</h3>
-        <p:clock displayMode="analog" mode="server" autoSync="true" syncInterval="8000"/>
-        <p:clock displayMode="digital" pattern="dd.MM.yyyy" mode="server" autoSync="true" syncInterval="8000"/>
-    </h:form>
+    <div id="body_div">
+        <div id="header">
+            <ui:insert>
+                <ui:include src="header.xhtml" />
+            </ui:insert>
+        </div>
+        <div id="clock">
+            <h:form style="border-width:2px; margin: 0 auto; padding: 1%; width: 70%">
+                <p:clock displayMode="analog" mode="server" autoSync="true" syncInterval="6000"/>
+                <p:clock displayMode="digital" pattern="dd.MM.yyyy" mode="server" autoSync="true" syncInterval="6000" />
+            </h:form>
+        </div>
+        <div id="navigator">
+            <h:form>
+                <h:button class="but" outcome="to_main" value="Go to main"/>
+            </h:form>
+        </div>
+    </div>
+    <h:outputStylesheet library="css" name="clock.css"/>
 </h:body>
 
 </html>

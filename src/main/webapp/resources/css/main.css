@@ -1,0 +1,51 @@
+.result{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+table.result td{/* Контекстный селектор */
+    border: 1px solid black;
+    overflow: auto;
+}
+
+body{ /*Наследование: размер шрифта и выравнивание*/
+    font-size: 20px;
+    text-align: center;
+    background-color: darkcyan;
+    background-size: 100%;
+}
+
+#body_div{
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 40%;
+}
+#canvas{
+    background-color: white;
+    margin-top: 10px;
+}
+.but{
+    font-size: 15px;
+    font-weight: bold;
+    border:2px solid white;
+    border-radius: 5px;
+    background-color: lightgray;
+    width: 15%;
+}
+#header{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-weight:bold;
+
+    border:2px solid white;
+    border-radius: 10px;
+}
+#form_id\:X{
+    width: 25%;
+    height: 20px;
+}
